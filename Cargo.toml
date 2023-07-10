@@ -11,9 +11,9 @@ license = "MIT OR Apache-2.0"
 categories = ["command-line-utilities", "development-tools"]
 
 
-[[bin]]
-name = "typst-fmt"
-path = "src/main.rs"
+#[[bin]]
+#name = "typst-fmt"
+#path = "src/main.rs"
 
 [dependencies]
 clap = { version = "4.2.0", features = ["derive"] }
@@ -23,8 +23,8 @@ log = "0.4.17"
 regex = "1.7.3"
 toml = "0.7.3"
 typst = { git = "https://github.com/typst/typst.git" }
+env_logger = "0.10.0"
 
 
 [dev-dependencies]
-env_logger = "0.10.0"
 similar-asserts = "1.4.2"
